@@ -1,0 +1,86 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.10/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/dist/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to your AI Assistant!</h1>
+        <form id="aiForm">
+            <label for="task">Choose an operation:</label>
+            <select id="task" name="task_type">
+                <option value="direct_question">Answer Questions</option>
+                <option value="summarize">Summarize Text</option>
+                <option value="interact">Generate Creative Content</option>
+            </select>
+            <label for="prompt">Enter your text:</label>
+            <textarea id="prompt" name="prompt" rows="4" cols="50"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="response"></div>
+        <form id="feedbackForm" style="display: none;">
+            <label for="feedback">Provide feedback:</label>
+            <textarea id="feedback" name="feedback" rows="3" cols="50"></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.10/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/dist/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to your AI Assistant!</h1>
+        <form id="aiForm">
+            <label for="task">Choose an operation:</label>
+            <select id="task" name="task_type">
+                <option value="direct_question">Answer Questions</option>
+                <option value="summarize">Summarize Text</option>
+                <option value="interact">Generate Creative Content</option>
+            </select>
+            <label for="prompt">Enter your text:</label>
+            <textarea id="prompt" name="prompt" rows="4" cols="50"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="response" class="markdown"></div>
+        <form id="feedbackForm" style="display: none;">
+            <label for="feedback">Provide feedback:</label>
+            <textarea id="feedback" name="feedback" rows="3" cols="50"></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        // Add this script to parse Markdown text
+        document.addEventListener('DOMContentLoaded', function() {
+            const responseDiv = document.getElementById('response');
+            const aiForm = document.getElementById('aiForm');
+
+            aiForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const prompt = document.getElementById('prompt').value;
+                // Assuming you have a function to get the AI response
+                const response = getAIResponse(prompt);
+                const html = marked(response); // Parse Markdown text to HTML
+                responseDiv.innerHTML = html;
+            });
+        });
+    </script>
+</body>
+</html>

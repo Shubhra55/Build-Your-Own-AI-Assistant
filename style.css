@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    width: 600px; /* Increased width for the container */
+}
+
+h1 {
+    color: #333; /* Darker text color for the heading */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+label {
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+select, textarea, button {
+    margin-bottom: 15px; /* Space between form elements */
+    padding: 10px; /* Padding inside input elements */
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 16px; /* Font size for inputs */
+}
+
+button {
+    background-color: #4CAF50; /* Green background for button */
+    color: white; /* White text color for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#response {
+    margin-top: 20px; /* Space above response area */
+    white-space: pre-wrap; /* Preserve whitespace formatting */
+    word-wrap: break-word; /* Break long words onto the next line */
+    background-color: #f4f4f4; /* Light grey background for response */
+    padding: 15px; /* Padding inside response area */
+    border-radius: 5px; /* Rounded corners for response area */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for response */
+    max-height: 200px; /* Set a maximum height */
+    overflow-y: auto; /* Make the area scrollable */
+}
+
+#response b, #response strong {
+    font-weight: bold;
+}
