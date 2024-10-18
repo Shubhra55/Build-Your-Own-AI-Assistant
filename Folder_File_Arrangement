@@ -1,0 +1,16 @@
+Basic Steps:
+
+Main folder : Project
+app.py (Main Python file)
+
+static (folder)
+  script.js
+  style.css
+
+templates (folder)
+  index.html
+
+.env (Containing API Key)
+
+feedback.log (To store Submitted Feedbacks)
+
