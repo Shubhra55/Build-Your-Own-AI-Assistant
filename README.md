@@ -47,7 +47,9 @@
   I am my creation with others, allowing them to experience the capabilities and benefits of my AI system.
   
   Step 10: Gathering Feedback and Iterating
+
   Post-deployment, I gathered user feedback to understand their experiences and identify areas for improvement. I continued to iterate on my design, making enhancements based on user input and emerging technologies.
+
   My journey is a testament to my dedication, problem-solving skills, and creative thinking. Each step was a milestone that brought me closer to realizing my vision of a personal AI assistant.
   
 **
