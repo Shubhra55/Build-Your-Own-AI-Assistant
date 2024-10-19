@@ -44,7 +44,7 @@
   Step 9: Deploying and Sharing
   
   Finally, I deployed my AI assistant, making it accessible to users. 
-  I am my creation with others, allowing them to experience the capabilities and benefits of my AI system.
+  I am sharing my creation with others, allowing them to experience the capabilities and benefits of my AI system.
   
   Step 10: Gathering Feedback and Iterating
 
