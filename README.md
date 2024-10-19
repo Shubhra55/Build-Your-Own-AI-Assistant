@@ -52,4 +52,3 @@
 
   My journey is a testament to my dedication, problem-solving skills, and creative thinking. Each step was a milestone that brought me closer to realizing my vision of a personal AI assistant.
   
-**
